@@ -1,0 +1,129 @@
+button {
+  background: none;
+}
+.addCartBtn {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #393939;
+  border-radius: 4px;
+  margin: 4%;
+}
+.addCartBtn:hover {
+  background-color: black;
+  color: white;
+}
+#header {
+  align-items: center;
+}
+.mb-3 {
+  margin-bottom: 0 !important;
+}
+#entranceWrap {
+  width: 100%;
+  height: 100vh;
+}
+#entranceWrap .bg {
+  width: 100%;
+  height: 70vh;
+  background: url("https://codingapple.com/wp-content/uploads/2022/04/bg.png")
+    no-repeat center center/cover;
+}
+#entranceWrap button {
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-15vh);
+}
+
+.card {
+  cursor: pointer;
+}
+
+#carousels1Wrap {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+#carousels1Wrap li {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  list-style: none;
+}
+#carousels1Wrap li.active {
+  opacity: 1;
+}
+
+#carousels1Wrap button {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  width: 80px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+#eventWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: lightskyblue;
+  width: 100%;
+  height: 50px;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 8px;
+  transition: all 5s;
+}
+#eventWrap .container {
+  position: absolute;
+  animation: moveLeft 5s linear 1s infinite forwards;
+}
+#eventWrap .container h1 {
+  font-weight: bold;
+  font-size: 14px;
+}
+#eventWrap button {
+  font-size: 18px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+@keyframes moveLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+#footer {
+  margin: 5% auto;
+  padding: 0 5%;
+  text-align: center;
+  height: 25%;
+}
+#footer .social-icons {
+}
+#footer .social-icons a:not(:last-child) {
+  margin-right: 5%;
+}
+#footer .social-icons a svg {
+  width: 25px;
+  height: 1.1rem;
+}
+#footer address {
+}
